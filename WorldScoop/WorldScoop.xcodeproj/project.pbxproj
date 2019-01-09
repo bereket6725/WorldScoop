@@ -24,6 +24,8 @@
 		E3E0E0B421E57B9F00C46C49 /* EU+AustraliaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0B321E57B9F00C46C49 /* EU+AustraliaViewController.swift */; };
 		E3E0E0B621E57BAC00C46C49 /* AfricaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0B521E57BAC00C46C49 /* AfricaViewController.swift */; };
 		E3E0E0B821E57BDD00C46C49 /* AsiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0B721E57BDD00C46C49 /* AsiaViewController.swift */; };
+		E3E0E0BF21E5997000C46C49 /* ViewModelProtocol .swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0BE21E5997000C46C49 /* ViewModelProtocol .swift */; };
+		E3E0E0C121E599D900C46C49 /* DetailArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0C021E599D900C46C49 /* DetailArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		E3E0E0B321E57B9F00C46C49 /* EU+AustraliaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EU+AustraliaViewController.swift"; sourceTree = "<group>"; };
 		E3E0E0B521E57BAC00C46C49 /* AfricaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaViewController.swift; sourceTree = "<group>"; };
 		E3E0E0B721E57BDD00C46C49 /* AsiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaViewController.swift; sourceTree = "<group>"; };
+		E3E0E0BE21E5997000C46C49 /* ViewModelProtocol .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModelProtocol .swift"; sourceTree = "<group>"; };
+		E3E0E0C021E599D900C46C49 /* DetailArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 		E373A7DF21E41EF6008E5534 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				E3E0E0BE21E5997000C46C49 /* ViewModelProtocol .swift */,
+				E3E0E0C021E599D900C46C49 /* DetailArticleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E373A7DA21E41ECB008E5534 /* NetworkController.swift in Sources */,
+				E3E0E0BF21E5997000C46C49 /* ViewModelProtocol .swift in Sources */,
 				E3E0E0B021E57B0E00C46C49 /* NorthAmericaViewController.swift in Sources */,
 				E3E0E0B621E57BAC00C46C49 /* AfricaViewController.swift in Sources */,
 				E31C083921E2C17F00E94224 /* ViewController.swift in Sources */,
@@ -282,6 +289,7 @@
 				E373A7E221E41F65008E5534 /* Resource.swift in Sources */,
 				E373A7D821E41EC0008E5534 /* DataController.swift in Sources */,
 				E3E0E0B221E57B2000C46C49 /* SouthAmericaViewController.swift in Sources */,
+				E3E0E0C121E599D900C46C49 /* DetailArticleViewModel.swift in Sources */,
 				E31C083721E2C17F00E94224 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

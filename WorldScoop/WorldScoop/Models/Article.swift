@@ -13,8 +13,8 @@ struct Article: Codable {
     let author: String
     let title: String
     let description: String
-    let imageURLString: URL
-    let URLString: URL
+    let imageURLString: String
+    let URLString: String
     let publishedAt: String
     
     enum CodingKeys: String, CodingKey {
