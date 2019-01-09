@@ -28,8 +28,6 @@ struct Article: Codable {
     }
 }
 
-
-
 enum Continent {
     case NorthAmerica
     case SouthAmerica

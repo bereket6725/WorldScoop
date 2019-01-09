@@ -26,6 +26,7 @@
 		E3E0E0B821E57BDD00C46C49 /* AsiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0B721E57BDD00C46C49 /* AsiaViewController.swift */; };
 		E3E0E0BF21E5997000C46C49 /* ViewModelProtocol .swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0BE21E5997000C46C49 /* ViewModelProtocol .swift */; };
 		E3E0E0C121E599D900C46C49 /* DetailArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0C021E599D900C46C49 /* DetailArticleViewModel.swift */; };
+		E3E0E0C321E59CD400C46C49 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0C221E59CD400C46C49 /* ArticleListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		E3E0E0B721E57BDD00C46C49 /* AsiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaViewController.swift; sourceTree = "<group>"; };
 		E3E0E0BE21E5997000C46C49 /* ViewModelProtocol .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModelProtocol .swift"; sourceTree = "<group>"; };
 		E3E0E0C021E599D900C46C49 /* DetailArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArticleViewModel.swift; sourceTree = "<group>"; };
+		E3E0E0C221E59CD400C46C49 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			children = (
 				E3E0E0BE21E5997000C46C49 /* ViewModelProtocol .swift */,
 				E3E0E0C021E599D900C46C49 /* DetailArticleViewModel.swift */,
+				E3E0E0C221E59CD400C46C49 /* ArticleListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E373A7DA21E41ECB008E5534 /* NetworkController.swift in Sources */,
+				E3E0E0C321E59CD400C46C49 /* ArticleListViewModel.swift in Sources */,
 				E3E0E0BF21E5997000C46C49 /* ViewModelProtocol .swift in Sources */,
 				E3E0E0B021E57B0E00C46C49 /* NorthAmericaViewController.swift in Sources */,
 				E3E0E0B621E57BAC00C46C49 /* AfricaViewController.swift in Sources */,
