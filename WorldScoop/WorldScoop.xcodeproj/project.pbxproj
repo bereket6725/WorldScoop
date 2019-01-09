@@ -19,6 +19,11 @@
 		E373A7E221E41F65008E5534 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373A7E121E41F65008E5534 /* Resource.swift */; };
 		E373A7E421E41F9B008E5534 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373A7E321E41F9B008E5534 /* ErrorHandling.swift */; };
 		E373A7E621E41FD4008E5534 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373A7E521E41FD4008E5534 /* Article.swift */; };
+		E3E0E0B021E57B0E00C46C49 /* NorthAmericaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0AF21E57B0E00C46C49 /* NorthAmericaViewController.swift */; };
+		E3E0E0B221E57B2000C46C49 /* SouthAmericaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0B121E57B2000C46C49 /* SouthAmericaViewController.swift */; };
+		E3E0E0B421E57B9F00C46C49 /* EU+AustraliaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0B321E57B9F00C46C49 /* EU+AustraliaViewController.swift */; };
+		E3E0E0B621E57BAC00C46C49 /* AfricaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0B521E57BAC00C46C49 /* AfricaViewController.swift */; };
+		E3E0E0B821E57BDD00C46C49 /* AsiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0E0B721E57BDD00C46C49 /* AsiaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		E373A7E121E41F65008E5534 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		E373A7E321E41F9B008E5534 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		E373A7E521E41FD4008E5534 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		E3E0E0AF21E57B0E00C46C49 /* NorthAmericaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthAmericaViewController.swift; sourceTree = "<group>"; };
+		E3E0E0B121E57B2000C46C49 /* SouthAmericaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthAmericaViewController.swift; sourceTree = "<group>"; };
+		E3E0E0B321E57B9F00C46C49 /* EU+AustraliaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EU+AustraliaViewController.swift"; sourceTree = "<group>"; };
+		E3E0E0B521E57BAC00C46C49 /* AfricaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaViewController.swift; sourceTree = "<group>"; };
+		E3E0E0B721E57BDD00C46C49 /* AsiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +136,11 @@
 		E373A7DD21E41EE1008E5534 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E3E0E0AF21E57B0E00C46C49 /* NorthAmericaViewController.swift */,
+				E3E0E0B121E57B2000C46C49 /* SouthAmericaViewController.swift */,
+				E3E0E0B321E57B9F00C46C49 /* EU+AustraliaViewController.swift */,
+				E3E0E0B521E57BAC00C46C49 /* AfricaViewController.swift */,
+				E3E0E0B721E57BDD00C46C49 /* AsiaViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -256,12 +271,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E373A7DA21E41ECB008E5534 /* NetworkController.swift in Sources */,
+				E3E0E0B021E57B0E00C46C49 /* NorthAmericaViewController.swift in Sources */,
+				E3E0E0B621E57BAC00C46C49 /* AfricaViewController.swift in Sources */,
 				E31C083921E2C17F00E94224 /* ViewController.swift in Sources */,
+				E3E0E0B821E57BDD00C46C49 /* AsiaViewController.swift in Sources */,
+				E3E0E0B421E57B9F00C46C49 /* EU+AustraliaViewController.swift in Sources */,
 				E373A7E421E41F9B008E5534 /* ErrorHandling.swift in Sources */,
 				E373A7DC21E41ED7008E5534 /* CacheController.swift in Sources */,
 				E373A7E621E41FD4008E5534 /* Article.swift in Sources */,
 				E373A7E221E41F65008E5534 /* Resource.swift in Sources */,
 				E373A7D821E41EC0008E5534 /* DataController.swift in Sources */,
+				E3E0E0B221E57B2000C46C49 /* SouthAmericaViewController.swift in Sources */,
 				E31C083721E2C17F00E94224 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
