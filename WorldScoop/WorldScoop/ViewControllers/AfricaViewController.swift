@@ -10,9 +10,18 @@ import UIKit
 
 class AfricaViewController: UIViewController {
 
+    var viewModel =  ArticleListViewModel(continent: .Africa)
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        viewModel.getArticlesFromNetwork { (error) in
+            if let error = error {
+                print("\(error.localizedDescription)")
+            }
+        }
+        print("\(viewModel.numberOfArticles)")
         // Do any additional setup after loading the view.
     }
     

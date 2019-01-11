@@ -13,6 +13,13 @@
 		E31C083E21E2C18100E94224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E31C083D21E2C18100E94224 /* Assets.xcassets */; };
 		E31C084121E2C18100E94224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E31C083F21E2C18100E94224 /* LaunchScreen.storyboard */; };
 		E31C084C21E2C18100E94224 /* WorldScoopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31C084B21E2C18100E94224 /* WorldScoopTests.swift */; };
+		E36651FB21E6A2DB00383126 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36651FA21E6A2DB00383126 /* Coordinator.swift */; };
+		E36651FD21E6AB8D00383126 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36651FC21E6AB8D00383126 /* DataSource.swift */; };
+		E36651FF21E6B5ED00383126 /* NorthAmericaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36651FE21E6B5ED00383126 /* NorthAmericaViewModel.swift */; };
+		E366520121E6B5FA00383126 /* SouthAmerica.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366520021E6B5FA00383126 /* SouthAmerica.swift */; };
+		E366520321E6B61800383126 /* AsiaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366520221E6B61800383126 /* AsiaViewModel.swift */; };
+		E366520521E6B62900383126 /* AfricaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366520421E6B62900383126 /* AfricaViewModel.swift */; };
+		E366520721E6B66700383126 /* EuropeAustraliaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E366520621E6B66700383126 /* EuropeAustraliaViewModel.swift */; };
 		E373A7D821E41EC0008E5534 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373A7D721E41EC0008E5534 /* DataController.swift */; };
 		E373A7DA21E41ECB008E5534 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373A7D921E41ECB008E5534 /* NetworkController.swift */; };
 		E373A7DC21E41ED7008E5534 /* CacheController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E373A7DB21E41ED7008E5534 /* CacheController.swift */; };
@@ -50,6 +57,13 @@
 		E31C084721E2C18100E94224 /* WorldScoopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldScoopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31C084B21E2C18100E94224 /* WorldScoopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScoopTests.swift; sourceTree = "<group>"; };
 		E31C084D21E2C18100E94224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E36651FA21E6A2DB00383126 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E36651FC21E6AB8D00383126 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		E36651FE21E6B5ED00383126 /* NorthAmericaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthAmericaViewModel.swift; sourceTree = "<group>"; };
+		E366520021E6B5FA00383126 /* SouthAmerica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthAmerica.swift; sourceTree = "<group>"; };
+		E366520221E6B61800383126 /* AsiaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiaViewModel.swift; sourceTree = "<group>"; };
+		E366520421E6B62900383126 /* AfricaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaViewModel.swift; sourceTree = "<group>"; };
+		E366520621E6B66700383126 /* EuropeAustraliaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuropeAustraliaViewModel.swift; sourceTree = "<group>"; };
 		E373A7D721E41EC0008E5534 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E373A7D921E41ECB008E5534 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		E373A7DB21E41ED7008E5534 /* CacheController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheController.swift; sourceTree = "<group>"; };
@@ -107,12 +121,12 @@
 			children = (
 				E31C083621E2C17F00E94224 /* AppDelegate.swift */,
 				E31C083821E2C17F00E94224 /* ViewController.swift */,
+				E36651F921E6A2C100383126 /* Coordinators */,
 				E373A7E021E41F09008E5534 /* Views */,
 				E373A7DF21E41EF6008E5534 /* ViewModels */,
 				E373A7DE21E41EEF008E5534 /* Models */,
 				E373A7DD21E41EE1008E5534 /* ViewControllers */,
 				E373A7D621E41E8A008E5534 /* Data Controllers */,
-				E31C083A21E2C17F00E94224 /* Main.storyboard */,
 				E31C083D21E2C18100E94224 /* Assets.xcassets */,
 				E31C083F21E2C18100E94224 /* LaunchScreen.storyboard */,
 				E31C084221E2C18100E94224 /* Info.plist */,
@@ -127,6 +141,14 @@
 				E31C084D21E2C18100E94224 /* Info.plist */,
 			);
 			path = WorldScoopTests;
+			sourceTree = "<group>";
+		};
+		E36651F921E6A2C100383126 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E36651FA21E6A2DB00383126 /* Coordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		E373A7D621E41E8A008E5534 /* Data Controllers */ = {
@@ -157,6 +179,7 @@
 				E373A7E121E41F65008E5534 /* Resource.swift */,
 				E373A7E321E41F9B008E5534 /* ErrorHandling.swift */,
 				E373A7E521E41FD4008E5534 /* Article.swift */,
+				E36651FC21E6AB8D00383126 /* DataSource.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,6 +190,11 @@
 				E3E0E0BE21E5997000C46C49 /* ViewModelProtocol .swift */,
 				E3E0E0C021E599D900C46C49 /* DetailArticleViewModel.swift */,
 				E3E0E0C221E59CD400C46C49 /* ArticleListViewModel.swift */,
+				E36651FE21E6B5ED00383126 /* NorthAmericaViewModel.swift */,
+				E366520021E6B5FA00383126 /* SouthAmerica.swift */,
+				E366520221E6B61800383126 /* AsiaViewModel.swift */,
+				E366520421E6B62900383126 /* AfricaViewModel.swift */,
+				E366520621E6B66700383126 /* EuropeAustraliaViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -174,6 +202,7 @@
 		E373A7E021E41F09008E5534 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E31C083A21E2C17F00E94224 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,21 +309,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				E373A7DA21E41ECB008E5534 /* NetworkController.swift in Sources */,
+				E366520721E6B66700383126 /* EuropeAustraliaViewModel.swift in Sources */,
 				E3E0E0C321E59CD400C46C49 /* ArticleListViewModel.swift in Sources */,
 				E3E0E0BF21E5997000C46C49 /* ViewModelProtocol .swift in Sources */,
 				E3E0E0B021E57B0E00C46C49 /* NorthAmericaViewController.swift in Sources */,
 				E3E0E0B621E57BAC00C46C49 /* AfricaViewController.swift in Sources */,
 				E31C083921E2C17F00E94224 /* ViewController.swift in Sources */,
+				E366520521E6B62900383126 /* AfricaViewModel.swift in Sources */,
 				E3E0E0B821E57BDD00C46C49 /* AsiaViewController.swift in Sources */,
 				E3E0E0B421E57B9F00C46C49 /* EU+AustraliaViewController.swift in Sources */,
 				E373A7E421E41F9B008E5534 /* ErrorHandling.swift in Sources */,
 				E373A7DC21E41ED7008E5534 /* CacheController.swift in Sources */,
+				E36651FB21E6A2DB00383126 /* Coordinator.swift in Sources */,
 				E373A7E621E41FD4008E5534 /* Article.swift in Sources */,
+				E366520321E6B61800383126 /* AsiaViewModel.swift in Sources */,
+				E36651FD21E6AB8D00383126 /* DataSource.swift in Sources */,
 				E373A7E221E41F65008E5534 /* Resource.swift in Sources */,
 				E373A7D821E41EC0008E5534 /* DataController.swift in Sources */,
 				E3E0E0B221E57B2000C46C49 /* SouthAmericaViewController.swift in Sources */,
 				E3E0E0C121E599D900C46C49 /* DetailArticleViewModel.swift in Sources */,
 				E31C083721E2C17F00E94224 /* AppDelegate.swift in Sources */,
+				E366520121E6B5FA00383126 /* SouthAmerica.swift in Sources */,
+				E36651FF21E6B5ED00383126 /* NorthAmericaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

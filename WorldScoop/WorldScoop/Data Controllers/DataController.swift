@@ -36,6 +36,7 @@ struct DataController {
                 
                 guard let result = resource.parser(data) else { return }
                 
+                print("\(result)")
                 update(Result.success(result))
             case .fail(let appError):
                 print("\(appError.localizedDescription)")

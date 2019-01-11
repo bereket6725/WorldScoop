@@ -9,9 +9,20 @@
 import UIKit
 
 class EU_AustraliaViewController: UIViewController {
+    
+    var viewModel =  ArticleListViewModel(continent: .EuropeAndAustralia)
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewModel.getArticlesFromNetwork { (error) in
+            if let error = error {
+                print("\(error.localizedDescription)")
+            }
+        }
+        
+        print("\(viewModel.numberOfArticles)")
 
         // Do any additional setup after loading the view.
     }
