@@ -56,9 +56,13 @@ extension Continent {
 extension Article {
 
     static func createResourceForContinent(continent: Continent) -> Resource<[Article]> {
-        let continentArticles =  Resource<[Article]>(url: URL(string:"https://newsapi.org/v2/everything?q=" + continent.resourceParameter + "&apiKey=a142ef71f0b14587b7dc712813539711")!, parser: { data in
-             return  Article.decodeArticleBox(data: data)?.articles
-        })
+        
+        let url = URL(string:"https://newsapi.org/v2/everything?q=" + continent.resourceParameter + "&apiKey=a142ef71f0b14587b7dc712813539711")!
+
+        let continentArticles =  Resource<[Article]>(url:url, parser: { data in
+            return  Article.decodeArticleBox(data: data)?.articles
+            })
+        
         return continentArticles
     }
     
@@ -71,6 +75,6 @@ public struct ArticleBox: Codable {
     let articles: [Article]
     
     enum CodingKeys: String, CodingKey {
-        case articles = "data"
+        case articles = "articles"
     }
 }

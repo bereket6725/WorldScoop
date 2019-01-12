@@ -48,8 +48,10 @@ extension ArticleFeedProviding {
     }
     
     func getArticlesFromNetwork(completion: @escaping (Error?) -> Void) {
+        let resource = Article.createResourceForContinent(continent: continent)
         
-        self.dataController.loadFromNetwork(resource: Article.createResourceForContinent(continent: continent)) { [weak self]  result in
+        self.dataController.loadFromNetwork(resource: resource) { [weak self]
+            result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let values):

@@ -9,28 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WorldScoop/Data Controllers/DataController.swift"
-            timestampString = "568871667.988344"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "loadFromNetwork(resource:update:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "WorldScoop/ViewModels/ViewModelProtocol .swift"
-            timestampString = "568871667.9884191"
+            timestampString = "568957935.0886641"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "getArticlesFromNetwork(completion:)"
             landmarkType = "7">
             <Locations>
@@ -42,12 +26,12 @@
                   moduleName = "WorldScoop"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/bereketghebremedhin/Desktop/WorldScoop/WorldScoop/WorldScoop/ViewModels/ViewModelProtocol%20.swift"
-                  timestampString = "568871668.0824341"
+                  timestampString = "568957935.165939"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "37">
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "89">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -57,30 +41,14 @@
                   moduleName = "WorldScoop"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/bereketghebremedhin/Desktop/WorldScoop/WorldScoop/WorldScoop/ViewModels/ViewModelProtocol%20.swift"
-                  timestampString = "568871668.084597"
+                  timestampString = "568957935.168469"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
                   offsetFromSymbolStart = "59">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WorldScoop/ViewModels/ViewModelProtocol .swift"
-            timestampString = "568871667.9887739"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "getArticlesFromNetwork(completion:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

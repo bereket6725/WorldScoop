@@ -35,7 +35,7 @@ struct DataController {
                 self.cache.save(value: data, for: resource)
                 
                 guard let result = resource.parser(data) else { return }
-                
+                            
                 print("\(result)")
                 update(Result.success(result))
             case .fail(let appError):
