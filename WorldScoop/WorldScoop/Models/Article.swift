@@ -9,7 +9,13 @@
 import Foundation
 
 struct Article: Codable {
-    let source: String
+    //let source: String
+    struct Source: Codable {
+        let source: String
+        enum CodingKeys: String, CodingKey{
+            case source = "name"
+        }
+    }
     let author: String
     let title: String
     let description: String
@@ -18,7 +24,7 @@ struct Article: Codable {
     let publishedAt: String
     
     enum CodingKeys: String, CodingKey {
-        case source = "name"
+        //case source = "name"
         case author
         case title
         case description
@@ -46,7 +52,7 @@ extension Continent {
         case .EuropeAndAustralia:
             return "Europe%20Australia"
         case .Africa:
-            return "Africa"
+            return "africa"
         case .Asia:
             return "Asia"
         }

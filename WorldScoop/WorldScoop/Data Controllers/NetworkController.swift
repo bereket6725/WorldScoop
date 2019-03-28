@@ -22,11 +22,12 @@ struct NetworkController {
             //Data might be nil and and the resource that parses it might be nil, flatmap does one level of unwrapping,
             //so we dont get an optional wrapped in another optional.
             guard let result = data.flatMap(resource.parser) else {
-                
                 let appError = ApplicationError.couldNotParse("could not parse")
                 completion(Result.fail(appError))
                 return
             }
+            print(result)
+
             completion(Result.success(result))
         }
         task.resume()
