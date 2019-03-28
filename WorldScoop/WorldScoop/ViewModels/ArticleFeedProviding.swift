@@ -31,8 +31,7 @@ protocol ArticleFeedProviding: class {
 extension ArticleFeedProviding {
     
     func getArticlesFromCache(completion: @escaping (Error?) -> Void) {
-        
-        self.dataController.loadFromCache(resource: Article.createResourceForContinent(continent:continent)) { [weak self]  result in
+        self.dataController.loadFromCache(resource: continent.articleResource) { [weak self]  result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let values):
@@ -48,7 +47,7 @@ extension ArticleFeedProviding {
     }
     
     func getArticlesFromNetwork(completion: @escaping (Error?) -> Void) {
-        let resource = Article.createResourceForContinent(continent: continent)
+        let resource = continent.articleResource
         
         self.dataController.loadFromNetwork(resource: resource) { [weak self]
             result in
@@ -71,4 +70,18 @@ extension ArticleFeedProviding {
         let articleToPass = self.articles[index]
         return DetailArticleViewModel(article: articleToPass)
     }
+}
+
+private extension Continent {
+
+    var articleResource: Resource<[Article]> {
+        let url = URL(string:"https://newsapi.org/v2/everything?q=" + self.resourceParameter + "&apiKey=a142ef71f0b14587b7dc712813539711")!
+
+        let continentArticles =  Resource<[Article]>(url:url, parser: { data in
+            return Article.decodeArticleBox(data: data)?.articles
+        })
+
+        return continentArticles
+    }
+
 }

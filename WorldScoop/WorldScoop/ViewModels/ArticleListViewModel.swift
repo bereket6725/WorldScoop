@@ -18,7 +18,6 @@ struct ArticleListTableView {
 
 final class ArticleListViewModel: NSObject, ArticleFeedProviding {
     var dataController: DataController
-    
 
     var continent: Continent
     

@@ -10,13 +10,15 @@ import Foundation
 
 struct Article: Codable {
     //let source: String
+
     struct Source: Codable {
         let source: String
         enum CodingKeys: String, CodingKey{
             case source = "name"
         }
     }
-    let author: String
+
+    let author: String?
     let title: String
     let description: String
     let imageURLString: String
@@ -34,29 +36,61 @@ struct Article: Codable {
     }
 }
 
-enum Continent {
-    case NorthAmerica
-    case SouthAmerica
-    case EuropeAndAustralia
-    case Africa
-    case Asia
+
+enum Continent: Int, CaseIterable {
+    case africa
+    case asia
+    case northAmerica
+    case southAmerica
+    case europeAndAustralia
 }
 
 extension Continent {
-    var resourceParameter:  String  {
+
+    var resourceParameter: String  {
         switch self {
-        case .NorthAmerica:
+
+        case .northAmerica:
             return "North%20America"
-        case .SouthAmerica:
+
+        case .southAmerica:
             return "South%20America"
-        case .EuropeAndAustralia:
+
+        case .europeAndAustralia:
             return "Europe%20Australia"
-        case .Africa:
-            return "africa"
-        case .Asia:
+
+        case .africa:
+            return "Africa"
+
+        case .asia:
             return "Asia"
         }
     }
+
+    var displayTitle: String  {
+        switch self {
+
+        case .northAmerica:
+            return "North America"
+
+        case .southAmerica:
+            return "South America"
+
+        case .europeAndAustralia:
+            return "Europe & Australia"
+
+        case .africa:
+            return "Africa"
+
+        case .asia:
+            return "Asia"
+        }
+    }
+
+    var tabIndex: Int {
+        return self.rawValue
+    }
+
 }
 
 extension Article {
