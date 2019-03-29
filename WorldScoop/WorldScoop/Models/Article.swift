@@ -9,7 +9,6 @@
 import Foundation
 
 struct Article: Codable {
-    //let source: String
 
     struct Source: Codable {
         let source: String
@@ -26,7 +25,6 @@ struct Article: Codable {
     let publishedAt: String
     
     enum CodingKeys: String, CodingKey {
-        //case source = "name"
         case author
         case title
         case description
@@ -95,26 +93,17 @@ extension Continent {
 
 extension Article {
 
-    static func createResourceForContinent(continent: Continent) -> Resource<[Article]> {
-        
-        let url = URL(string:"https://newsapi.org/v2/everything?q=" + continent.resourceParameter + "&apiKey=a142ef71f0b14587b7dc712813539711")!
-
-        let continentArticles =  Resource<[Article]>(url:url, parser: { data in
-            return  Article.decodeArticleBox(data: data)?.articles
-            })
-        
-        return continentArticles
-    }
-    
     static func decodeArticleBox(data: Data) -> ArticleBox? {
         return Resource<ArticleBox>.decode(data: data)
     }
 }
 
 public struct ArticleBox: Codable {
+
     let articles: [Article]
     
     enum CodingKeys: String, CodingKey {
         case articles = "articles"
     }
+
 }

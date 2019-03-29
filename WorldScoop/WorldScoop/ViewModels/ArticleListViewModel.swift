@@ -8,20 +8,13 @@
 
 import Foundation
 
-struct ArticleListTableView {
-    static let reuseID = "reuseID"
-    static let cellNibName = "ArticleTableViewCell"
-    static let storyBoardName = "Main"
-    static let detailStoryBoardID = "DetailView"
-}
 
+final class ArticleListViewModel: NSObject { //, ArticleFeedProviding {
 
-final class ArticleListViewModel: NSObject, ArticleFeedProviding {
-    var dataController: DataController
-
-    var continent: Continent
-    
     var articles: [Article] = []
+    
+    let dataController = DataController()
+    let continent: Continent
     
     var numberOfArticles: Int {
         return articles.count
@@ -31,18 +24,88 @@ final class ArticleListViewModel: NSObject, ArticleFeedProviding {
         return articles[index].title
     }
     
-    func articleimageURL(index: Int) -> String {
+    func articleImageURL(index: Int) -> String {
         return articles[index].imageURLString
     }
-    
-    func articlePublishDate(index: Int) -> String {
-        return articles[index].publishedAt
+
+    func articleURL(index: Int) -> URL {
+        return URL(string: articles[index].URLString)!
     }
-    
+
+    func articlePublishDate(index: Int) -> String {
+        let originalDateString = articles[index].publishedAt
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM dd yyyy, h:mm a"
+
+        let isoFormatter = ISO8601DateFormatter()
+        let date = isoFormatter.date(from: originalDateString)
+
+        if let parsedDate = date {
+            return dateFormatter.string(from: parsedDate)
+        } else {
+            return originalDateString
+        }
+    }
+
     init(continent: Continent) {
-        dataController = DataController()
         self.continent = continent
         super.init()
     }
-    
+
+    func getArticlesFromCache(completion: @escaping (Error?) -> Void) {
+        let resource =  Resource<Article>.articleResource(continent: self.continent)
+
+        self.dataController.loadFromCache(resource: resource) { [weak self]  result in
+            DispatchQueue.main.async {
+                switch result {
+
+                case .success(let values):
+                    self?.articles = values
+                    completion(nil)
+
+                case .failure(let error):
+                    print("\(error.localizedDescription)")
+                    completion(error)
+
+                }
+            }
+        }
+    }
+
+    func getArticlesFromNetwork(completion: @escaping (Error?) -> Void) {
+        let resource =  Resource<Article>.articleResource(continent: self.continent)
+
+        self.dataController.loadFromNetwork(resource: resource) { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+
+                case .success(let values):
+                    self?.articles = values
+
+                    print("\(String(describing: self?.articles))")
+                    completion(nil)
+
+                case .failure(let error):
+                    print(error)
+                    completion(error)
+                }
+            }
+        }
+    }
+
+}
+
+private extension Resource {
+
+    static func articleResource(continent: Continent) -> Resource<[Article]> {
+        let url = URL(string:"https://newsapi.org/v2/everything?q=" + continent.resourceParameter + "&apiKey=a142ef71f0b14587b7dc712813539711")!
+
+        let continentArticles = Resource<[Article]>(url:url, parser: { data in
+            return Article.decodeArticleBox(data: data)?.articles
+        })
+
+        return continentArticles
+    }
+
 }

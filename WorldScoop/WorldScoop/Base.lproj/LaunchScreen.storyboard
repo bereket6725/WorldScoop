@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,64 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="asia" translatesAutoresizingMaskIntoConstraints="NO" id="6Px-Mf-ey7">
+                                <rect key="frame" x="284" y="105" width="25" height="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="australia" translatesAutoresizingMaskIntoConstraints="NO" id="gze-EX-tII">
+                                <rect key="frame" x="284" y="511" width="25" height="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="south-america" translatesAutoresizingMaskIntoConstraints="NO" id="JfB-Oy-dJu">
+                                <rect key="frame" x="42" y="511" width="25" height="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="north-america" translatesAutoresizingMaskIntoConstraints="NO" id="hgJ-Yp-rhG">
+                                <rect key="frame" x="42" y="105" width="25" height="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="africa" translatesAutoresizingMaskIntoConstraints="NO" id="hIg-BA-pVY">
+                                <rect key="frame" x="175" y="321" width="25" height="25"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="World Scoop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVc-vI-sGJ">
+                                <rect key="frame" x="95" y="229" width="185" height="46"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19406683668185584" green="0.43651011460922395" blue="0.74055649768710308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hgJ-Yp-rhG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="0jF-Ij-uvb"/>
+                            <constraint firstItem="hIg-BA-pVY" firstAttribute="top" secondItem="bVc-vI-sGJ" secondAttribute="bottom" constant="46" id="1Bm-D5-G5F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JfB-Oy-dJu" secondAttribute="bottom" constant="131" id="3Tl-si-LGC"/>
+                            <constraint firstItem="bVc-vI-sGJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="47n-28-X4n"/>
+                            <constraint firstItem="hIg-BA-pVY" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="75p-BX-0kN"/>
+                            <constraint firstItem="hgJ-Yp-rhG" firstAttribute="top" secondItem="6Px-Mf-ey7" secondAttribute="top" id="Hyw-nX-CO4"/>
+                            <constraint firstItem="hgJ-Yp-rhG" firstAttribute="leading" secondItem="JfB-Oy-dJu" secondAttribute="leading" id="JVB-G9-ttd"/>
+                            <constraint firstItem="bVc-vI-sGJ" firstAttribute="centerX" secondItem="hIg-BA-pVY" secondAttribute="centerX" id="L9a-EK-Ujd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Px-Mf-ey7" secondAttribute="trailing" constant="66" id="TM5-J1-UaE"/>
+                            <constraint firstItem="JfB-Oy-dJu" firstAttribute="top" secondItem="gze-EX-tII" secondAttribute="top" id="o3b-k5-k2t"/>
+                            <constraint firstItem="6Px-Mf-ey7" firstAttribute="leading" secondItem="gze-EX-tII" secondAttribute="leading" id="sxz-Zk-VRN"/>
+                            <constraint firstItem="bVc-vI-sGJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="209" id="ve2-s6-6Ws"/>
+                            <constraint firstItem="bVc-vI-sGJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wZV-QB-ZBe"/>
+                            <constraint firstItem="hgJ-Yp-rhG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="zZB-yC-LrG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="africa" width="25" height="25"/>
+        <image name="asia" width="25" height="25"/>
+        <image name="australia" width="25" height="25"/>
+        <image name="north-america" width="25" height="25"/>
+        <image name="south-america" width="25" height="25"/>
+    </resources>
 </document>

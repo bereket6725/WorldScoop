@@ -11,13 +11,13 @@ import Foundation
 struct CacheController {
     
     private let baseURL = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-    
+
     func load<A: Codable>(resource: Resource<A>) -> A? {
         guard let url = baseURL?.appendingPathComponent(resource.cacheKey) else { return nil }
         guard let data = try? Data(contentsOf: url) else { return nil }
         return Resource<A>.decode(data: data)
     }
-    
+
     @discardableResult
     func save<A: Codable>(value: Data, for resource: Resource<A> ) -> Bool {
         guard let url = baseURL?.appendingPathComponent(resource.cacheKey) else { return false }

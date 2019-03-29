@@ -10,7 +10,7 @@ import Foundation
 
 public enum Result<A> {
     case success(A)
-    case fail(ApplicationError)
+    case failure(ApplicationError)
 }
 
 public enum ApplicationError: Error {
